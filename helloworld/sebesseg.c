@@ -1,21 +1,28 @@
 #include<stdio.h>
 
-int main(){
+int main() {
 
-    double ut, ido, eredmeny;      
-	printf("Add meg a megtett utat (km): ");
-    
-	scanf("%lf", &ut);
-
-    printf("\nMennyi időt futottál (óra):   ");
-    scanf("%lf", &ido);
-
-     eredmeny = ut / ido ;
-     printf("\nA futó sebessége: %lf km/h ", eredmeny);
-    
-     eredmeny = ido * 60 / ut;
-     printf("\nA futó irama: %lf perc/km ", eredmeny);
+    float ut = 0;
+	float ido = 0;
+	float eredmeny = 0;
 	
+	printf("Add meg a megtett utat (km): ");    
+	scanf("%f", &ut);
 
-return 0;
+
+    printf("\nMennyi idot futottal (ora):   ");
+    scanf("%f", &ido);
+
+	if (ido == 0 || ut == 0) {
+		return 1;
+	}
+
+	eredmeny = ut / ido ;
+	printf("\nA futo sebessege: %f km/h ", eredmeny);
+
+	eredmeny = ido * 60 / ut;
+	printf("\nA futo irama: %f perc/km ", eredmeny);
+
+
+	return 0;
 }
