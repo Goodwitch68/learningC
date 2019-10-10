@@ -6,6 +6,8 @@ int main() {
 	float ido = 0;
 	float eredmeny = 0;
 	
+	setbuf(stdout, NULL);
+	
 	printf("Add meg a megtett utat (km): ");    
 	scanf("%f", &ut);
 
