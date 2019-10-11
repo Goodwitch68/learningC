@@ -9,13 +9,20 @@ int main() {
 	setbuf(stdout, NULL);
 	
 	printf("Add meg a megtett utat (km): ");    
+	fflush(stdout);
 	scanf("%f", &ut);
+	if ut == 0 {
+		printf("Ne viccelj, ha el sem indultál, miért szórakozol velem!/n Na indulj el szépen futni!")	
+		return 1;
+		}
+    
+	printf("\nMennyi idot futottal (óra):   ");
+    fflush(stdout);
+	
+	scanf("%f", &ido);
+	if (ido == 0 ) {
+		printf("Ne viccelj, nem az űrben vagy, miért szórakozol velem!/n Tehát mennyi idő alatt futottad le az %fl km-t!", ut)	
 
-
-    printf("\nMennyi idot futottal (ora):   ");
-    scanf("%f", &ido);
-
-	if (ido == 0 || ut == 0) {
 		return 1;
 	}
 
