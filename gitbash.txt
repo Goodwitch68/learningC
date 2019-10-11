@@ -1,0 +1,40 @@
+======== BASH ========
+ls					fájlok listázása (LiSt)
+ll					fájlok listázása részletesen (Long List)
+mkdir <mappanév>	új mappa (Make Direcory)
+cat	<fájlnév>		fájl tartalmának megjelenítése a terminálban
+pwd					jelenlegi mappa kiírása (Print Working Directory)
+less <fájlnév>		fájl tartalmának megjelenítése, görgethető. Kilépés: :q
+rm <fájlnév>		törlés (ReMove)
+cp <fájlnév> <cél>	fájl másolása (CoPy)
+mv <fájlnév> <cél>	fájl áthelyezése (vagy átnevezése) (MoVe)
+
+
+
+======== GIT ========
+ha csak beírod, hogy "git", kiírja az összes opciót
+
+---- letöltés --- (csak a jelenlegi branch)
+git pull
+
+---- változtatások commitolása ----
+git status
+git diff (ez csak a nem stage-elt (git add-olt) diff-eket mutatja)
+git add <filename>
+git diff --staged (azok a diffek, amiket add-oltál)
+git commit -m "<message>"
+
+---- feltöltés ---- (csak a jelenlegi branch)
+git push
+
+---- vadiúj branch kicsekkolása ---- (mikor új dolgon kezdesz dolgozni)
+git checkout -b <branch name, e.g. feature/helloworld>
+
+---- váltás másik branchre ----
+git checkout <branch>
+
+---- másik branch a jelenlegi (checkoutolt) branch-be fésülése ----
+git merge <másik branch>
+
+---- history megnézése ----
+git log (kilépés: Q billentyű, vagy :q)
