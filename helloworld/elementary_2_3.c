@@ -11,8 +11,8 @@ int main() {
 
 	if (name[0] == 'A' || name[0] == 'B') {
 	
-	setbuf(stdout, NULL);
-	printf("Üdvözöllek, %s!", name);
+		setbuf(stdout, NULL);
+		printf("Üdvözöllek, %s!", name);
 	}
     
 	
