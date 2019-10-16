@@ -25,10 +25,10 @@ int main(){
 				// minden más esetben menj a következő osztóra
             
 		}
-		//if (prime = 0) {
+		if (prime = 0) {
 			setbuf(stdout, NULL);
 			printf("%d  %d\n", szam, prime); //kiíratom vele, hogy prim-e, hogy lássam, hol van a baj
-			//}
+			}
 	}
 
 return 0;
