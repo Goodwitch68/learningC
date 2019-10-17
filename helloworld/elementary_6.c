@@ -13,11 +13,10 @@ int main() {
 	scanf("%d", &szam);
 		
 	printf("A számok összegét (s) vagy szorzatát (p) számoljam ki 1-től n-ig? ");    
-	scanf("%c", &dontes);
+	scanf(" %c", &dontes);
 	printf("%c", dontes);
 	
 	while (dontes != 's' && dontes !='p') {
-		setbuf(stdout, NULL);
 		printf("Kérlek nyomj s-t vagy p-t!\n");
 		scanf("%c", &dontes);
 	}
