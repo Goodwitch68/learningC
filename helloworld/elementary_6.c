@@ -34,6 +34,4 @@ int main() {
   
 	return 0;
 }
-//ebben is van még varázslat. Az előtt lefut a while ciklus,
-// mielőtt be olvashatná a dontes valtozót. 
-//Látszólag nem csinál hülyeséget a program, mert értelmes így is, de ez hiba
+//most jól fut
