@@ -2,19 +2,21 @@
 
 int main() {
 
-    char name[100] ;/* define name */
+    char name [100]; /* define name */
   
   	setbuf(stdout, NULL);
 	
 	printf("Hogy hívnak? ");    
 	scanf("%s", &name);
 
-	if (name[0] == 'A' || name[0] == 'B') {
+	if ( name == "Alice" || name == "Bob") {
 	
 		setbuf(stdout, NULL);
 		printf("Üdvözöllek, %s!", name);
 	}
     
+	printf("%s!", name);
+	printf ("%d\n", name == "Bob");
 	
 	return 0;
 }
