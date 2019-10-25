@@ -11,19 +11,19 @@
 }*/
 
 int main() {
-    int szam;
+	int szam;
 	int hatar;
-    int i;
+	int i;
 	int prime;
 	
 	setbuf(stdout, NULL);
 	printf("Meddig terjedjen a primek kiírása? ");
 	scanf("%d", &hatar);
-    
+
 	printf("2\n");
-	for(szam=3; szam <= hatar; szam = szam + 2) {
-		prime = 0;
-        for(i=2; i<=sqrt(szam+1); i++) {            
+	for(szam = 3; szam <= hatar; szam = szam + 2) {
+		prime=0;
+		for(i = 2; i <= sqrt(szam+1); i++) {
 			if(szam % i ==0) { // akkor nem prim, menj a következő osztóra
 				prime = 1;
 				break;
