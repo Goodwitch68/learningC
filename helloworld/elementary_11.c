@@ -7,17 +7,14 @@
 #include <stdio.h>
 #include <math.h>
 
-
-
 int main(){
 	
 	double sum = 0; 
 	for (double k = 1; k<= 1000000; k++){
 		sum = sum + (pow (-1, k)/(2*k-1));
 		printf("\nSum*4 is 1-%f-ig: %f", k, sum*4);
-		
 	}
-    return 0;
+	return 0;
 }
 
 //double pow(double x, double y);
