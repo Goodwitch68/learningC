@@ -1,1 +1,9 @@
-//Ezek szerint itt is lehet kódolni, közvetlenül?
+#include <stdlib.h>
+#include <stdio.h>
+
+void main()
+{
+	printf ("Howdy, neighbor! This is my first C program.\n");    
+	exit(0);
+	
+}
