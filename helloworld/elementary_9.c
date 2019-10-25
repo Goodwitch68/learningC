@@ -3,14 +3,14 @@
 
 int main(int argc, char *argv[])
 {
-    int a;
-    srand(time(NULL));
-    a = rand() % 100 + 1;
-   
+	int a;
+	srand(time(NULL));
+	a = rand() % 100 + 1;
+	
 	int number;
 	int old_number = 0;
 	int trials = 0;
-   
+	
 	setbuf(stdout, NULL);
 	printf(" %d", a);
 	printf("\nGondoltam egy számra 1 és 100 között, találd ki melyikre!  \n");
