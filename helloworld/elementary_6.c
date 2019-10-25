@@ -2,17 +2,17 @@
 
 int main() {
 
-    int szam = 0;
+	int szam = 0;
 	int osszeg = 0;
 	int szorzat = 1;
 	char dontes = 'p';
-  
-  	setbuf(stdout, NULL);
+
+	setbuf(stdout, NULL);
 	
-	printf("Írj egy számot: ");    
+	printf("Írj egy számot: ");
 	scanf("%d", &szam);
-		
-	printf("A számok összegét (s) vagy szorzatát (p) számoljam ki 1-től n-ig? ");    
+	
+	printf("A számok összegét (s) vagy szorzatát (p) számoljam ki 1-től n-ig? ");
 	scanf(" %c", &dontes);
 	printf("%c", dontes);
 	
@@ -30,8 +30,6 @@ int main() {
 		}
 		printf("A számok produktuma 1-%d-ig:%d\n", szam, szorzat);
 	}
-	
-  
 	return 0;
 }
 //most jól fut
