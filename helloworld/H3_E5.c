@@ -1,15 +1,10 @@
 #include <stdio.h>
 /* This function multiplicate two integers and returns the result */
-int integer_mult( int x, int y )
-{
-	int result;
-	result = x * y;
-	return result;
+int integer_mult(int x, int y) {
+	return x * y;
 }
-int main()
-{
-	int prod;
-	prod = integer_mult(3, 5);
-	printf("3 times 5 is %d.\n", prod);
+
+int main() {
+	printf("3 times 5 is %d.\n", integer_mult(3, 5));
 	return 0;
 }
