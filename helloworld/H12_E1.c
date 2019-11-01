@@ -52,7 +52,7 @@ elements of the array.*/
 
 /*4. Rewrite the program in Listing 12.5. This time put a string of characters, I like
 C!, on the screen.*/
-	setbuf(stdout, NULL);
+
 	char array_ch_new[9] = {'I',' ','l','i','k','e',' ','C','!'};
 //	for (i=0; array_ch_new[i]; i++){
 	for (i=0; i < 9; i++){
@@ -69,6 +69,15 @@ double list_data[6] = {
 5.12345};
 use the two equivalent ways taught in this lesson to measure the total memory
 space taken by the array, and then display the results on the screen.*/
-
+	double list_data[6] = {
+		1.12345,
+		2.12345,
+		3.12345,
+		4.12345,
+		5.12345};
+	total_byte = sizeof (list_data);
+	printf("The total memory space taken by the array by method I.: %d\n", total_byte);
+	total_byte = sizeof (double) * 6;
+	printf("The total memory space taken by the array by method II.: %d\n", total_byte);
 	return 0;
 }
