@@ -26,13 +26,19 @@ main() {
 //ch to decimal 66 by using a pointer.
 
 	char ch = 'A';
-	int *ptr_ch = &ch;
+	char *ptr_ch = &ch;
 	*ptr_ch = 66;
-	printf("ch returns %c", ch);
+	printf("ch returns %c\n", ch);
 
 //4. Given that x=5 and y=6, write a program to calculate the multiplication of the two
 //integers and print out the result, which is saved in x, all in the way of indirection
 //(that is, using pointers).
 
+	x = 5;
+	y = 6;
+	int *ptrx = &x;
+	int *ptry = &y;
+	*ptrx *= *ptry;
+	printf("x=%d\n", x);
 	return 0;
 }
