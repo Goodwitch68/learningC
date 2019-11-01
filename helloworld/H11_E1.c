@@ -28,7 +28,7 @@ main() {
 	char ch = 'A';
 	int *ptr_ch = &ch;
 	*ptr_ch = 66;
-	printf("ch returns %c");
+	printf("ch returns %c", ch);
 
 //4. Given that x=5 and y=6, write a program to calculate the multiplication of the two
 //integers and print out the result, which is saved in x, all in the way of indirection
