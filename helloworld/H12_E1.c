@@ -52,9 +52,10 @@ elements of the array.*/
 
 /*4. Rewrite the program in Listing 12.5. This time put a string of characters, I like
 C!, on the screen.*/
-
-	char array_ch_new[] = {'I',' ','l','i','k','e',' ','C','!'};
-	for (i=0; array_ch_new[i]; i++){
+	setbuf(stdout, NULL);
+	char array_ch_new[9] = {'I',' ','l','i','k','e',' ','C','!'};
+//	for (i=0; array_ch_new[i]; i++){
+	for (i=0; i < 9; i++){
 		printf("%c", array_ch_new[i]);
 		}
 	printf("\n");
