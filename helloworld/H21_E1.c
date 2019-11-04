@@ -10,4 +10,4 @@ into a file called test_21.txt by writing one character at a time. Meanwhile, pr
 out the string on the screen.
 
 4. Rewrite exercise 3. This time, try to write one block of characters (that is, one
-string) at a time.
+string) at a time. 
