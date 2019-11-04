@@ -2,27 +2,27 @@
 //of %s, to print out the character string of the local time on your computer.
 
 #include <stdio.h>
-3: #include <time.h>
-4:
-5: void GetDateTime(void);
-6:
-7: main()
-8: {
-9: printf("Before the GetDateTime() function is called.\n");
-10: GetDateTime();
-11: printf("After the GetDateTime() function is called.\n");
-12: return 0;
-13: }
-14: /* GetDateTime() definition */
-15: void GetDateTime(void)
-16: {
-17: time_t now;
-18:
-19: printf("Within GetDateTime().\n");
-20: time(&now);
-21: printf("Current date and time is: %s\n",
-22: asctime(localtime(&now)));
-23: }
+#include <time.h>
+
+void GetDateTime(void);
+
+main() {
+	printf("Before the GetDateTime() function is called.\n");
+	GetDateTime();
+	printf("After the GetDateTime() function is called.\n");
+	return 0;
+}
+/* GetDateTime() definition */
+void GetDateTime(void) {
+	time_t now;
+	int i;
+	char *str;
+	printf("Within GetDateTime().\n");
+	time(&now);
+	str = asctime (localtime (&now));
+	printf("Current date and time is: ");
+	for (i=0; str[i]; i++) printf("%c", str[i]);
+}
 
 
 
