@@ -6,11 +6,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* function declaration */
-int SumNumbers (int x);
-
-/* main() function */
-
 main() {
 	int SizeofAllmemory;
 	int *ptr_x;
