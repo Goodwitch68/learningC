@@ -3,23 +3,31 @@
 
  #include <stdio.h>
 
-main(void) {
 	union employee {
 		int start_year;
 		int dpt_code;
 		int id_number;
 	} info;
+	
+void Display (union employee s);
+
+main(void) {
+
 	/* initialize start_year */
 	info.start_year = 1997;
+	Display (info);
 	/* initialize dpt_code */
 	info.dpt_code = 8;
+	Display (info);
 	/* initialize id */
 	info.id_number = 1234;
-	
-	/* display content of union */
-	printf("Start Year: %d\n", info.start_year);
-	printf("Dpt. Code: %d\n", info.dpt_code);
-	printf("ID Number: %d\n", info.id_number);
-	
+	Display (info);
+
 	return 0;
+}
+		/* display content of union */
+void Display(union employee s) {
+	printf("Start Year: %d\n", s.start_year);
+	printf("Dpt. Code: %d\n", s.dpt_code);
+	printf("ID Number: %d\n", s.id_number);
 }
