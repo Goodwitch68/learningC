@@ -14,6 +14,7 @@ typedef struct computer SC;
 void DataReceive(SC *ptr_s);
 
 main(void) {
+	setbuf(stdout, NULL);
 	SC model;
 	
 	DataReceive(&model);
@@ -28,11 +29,11 @@ main(void) {
 	/* function definition */
 void DataReceive(SC *ptr_s) {
 	printf("The type of the CPU inside your computer?\n");
-	gets((*ptr_s).cpu_type);
+	gets(ptr_s->cpu_type);
 	printf("The speed(MHz) of the CPU?\n");
-	scanf("%d", &(*ptr_s).cpu_speed);
+	scanf("%d", &ptr_s->cpu_speed);
 	printf("The year your computer was made?\n");
-	scanf("%d", &(*ptr_s).year);
+	scanf("%d", &ptr_s->year);
 	printf("How much you paid for the computer?\n");
-	scanf("%f", &(*ptr_s).cost);
+	scanf("%f", &ptr_s->cost);
 }
