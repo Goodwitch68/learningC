@@ -15,16 +15,17 @@ main(void) {
 	/* reference name */
 	strcpy(dish.name, "Sweet and Sour Chicken");
 // line 15: 
-	printf("Dish Name: %s\n", dish.name);
+
 	/* reference price */
 // line 17: 
 	dish.price = 9.95;
+	printf("Dish Name: %s\n", dish.name);
 	printf("Dish Price: %5.2f\n", dish.price);
 	
 	return 0;
 }
 
-
+//both of variable returns 9.95 value
 
 
 
