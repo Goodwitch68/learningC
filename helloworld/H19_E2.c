@@ -5,11 +5,14 @@
 
 #include <stdio.h>
 
-main(void) {
 	struct employee {
-	int id;
-	char name[32];
+		int id;
+		char name[32];
 	};
+void Print(struct employee s);
+
+main() {
+
 	/* structure initialization */
 	struct employee info = {
 	1,
@@ -17,17 +20,20 @@ main(void) {
 	};
 	
 	printf("Here is a sample:\n");
-	printf("Employee Name: %s\n", info.name);
-	printf("Employee ID #: %04d\n\n", info.id);
-	
+	Print (info);
+	setbuf(stdout, NULL);
 	printf("What's your name?\n");
 	gets(info.name);
 	printf("What's your ID number?\n");
 	scanf("%d", &info.id);
 	
 	printf("\nHere are what you entered:\n");
-	printf("Name: %s\n", info.name);
-	printf("ID #: %04d\n", info.id);
+	Print (info);
 	
 	return 0;
+}
+
+void Print (struct employee s) {
+	printf ("Name: %s\n", s.name);
+	printf ("ID# : %d\n", s.id);
 }
