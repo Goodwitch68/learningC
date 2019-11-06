@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 
-struct haiku {
+struct haiku {		//haiku struct declaration
 	int start_year;
 	int end_year;
 	char author[16];
@@ -13,12 +13,12 @@ struct haiku {
 	char str3[32];
 };
 
-typedef struct haiku HK;
+typedef struct haiku HK; //data type definition (HK)
 
-void DataDisplay(HK *ptr_s);
+void DataDisplay(HK *ptr_s); //funktion declaration (DataDisplay)
 
 main(void) {
-	HK poem[2] = {
+	HK poem[2] = {	//stuct variable definition (2 variables)
 		{ 1641,
 		1716,
 		"Sodo",
@@ -34,10 +34,11 @@ main(void) {
 		"the full moon grows."
 		}
 	};
+	HK *ptr_poem[2] = {&poem[0], &poem[1]}; //definition of array of pointers
+
 	int i;
-	
 	for (i=0; i<2; i++)
-		DataDisplay(&poem[i]);
+		DataDisplay(&poem[i]); //function call 
 	
 	return 0;
 }
