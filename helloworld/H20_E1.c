@@ -25,7 +25,7 @@ main(void) {
 	return 0;
 }
 
-//both of variable returns 9.95 value
+//dish.name is partially overwritten
 
 
 
