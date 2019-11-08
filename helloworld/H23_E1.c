@@ -54,32 +54,3 @@ main(void) {
 	return NO_ERROR;
 }
 
-//4. Rewrite the program in Listing 23.3 with nested #if directives.
-#include <stdio.h>
-
-#define C_LANG ‘C’
-#define B_LANG ‘B’
-#define NO_ERROR 0
-
-main(void) {
-	#if C_LANG == ‘C’ && B_LANG == ‘B’
-	#undef C_LANG
-	#define C_LANG “I know the C language.\n”
-	#undef B_LANG
-	#define B_LANG “I know BASIC.\n”
-	printf(“%s%s”, C_LANG, B_LANG);
-	#elif C_LANG == ‘C’
-	#undef C_LANG
-	#define C_LANG “I only know C language.\n”
-19: printf(“%s”, C_LANG);
-20: #elif B_LANG == ‘B’
-21: #undef B_LANG
-22: #define B_LANG “I only know BASIC.\n”
-23: printf(“%s”, B_LANG);
-24: #else
-25: printf(“I don’t know C or BASIC.\n”);
-26: #endif
-27:
-28: return NO_ERROR;
-29: }
-After the executable 
