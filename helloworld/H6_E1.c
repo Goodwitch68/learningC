@@ -1,24 +1,23 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
 	//1. feladat
 	//Given x = 1 and y = 3, write a program to print 
 	//out the results of these expressions: x += y, 
 	//x += -y, x -= y, x -= -y, x *= y, and x *= -y.
-	int x=1;
-	int y=3;
-	printf("x += y értéke:%d\n",x += y);
-	x=1;
-	printf("x += -y értéke:%d\n",x += (-y));
-	x=1;
-	printf("x -= y értéke:%d\n",x -= y);
-	x=1;
-	printf("x -= -y értéke:%d\n",x -= (-y));
-	x=1;
-	printf("x *= y értéke:%d\n",x *= y);
-	x=1;
-	printf("x *= -y értéke:%d\n",x *= (-y));
+	int x = 1;
+	int y = 3;
+	printf("x += y értéke:%d\n", x += y);
+	x = 1;
+	printf("x += -y értéke:%d\n", x += (-y));
+	x = 1;
+	printf("x -= y értéke:%d\n", x -= y);
+	x = 1;
+	printf("x -= -y értéke:%d\n", x -= (-y));
+	x = 1;
+	printf("x *= y értéke:%d\n", x *= y);
+	x = 1;
+	printf("x *= -y értéke:%d\n", x *= (-y));
 
 	//2. feladat
 	//Given x = 3 and y = 6, what is the value of z after the expression

@@ -19,14 +19,13 @@ int main() {
 	int i;
 	int j;
 	printf("2. feladat\n");
-	for (i=0, j=1; i<8; i++, j++)
-		printf("%d + %d  = %d\n", i, j, i+j);
-	
-	
-	for (i=0, j=1; i<8; i++, j++);
+	for (i = 0, j = 1; i < 8; i++, j++)
 		printf("%d + %d = %d\n", i, j, i+j);
-	//the 2. loop does'nt do anything
 	
+	
+	for (i = 0, j = 1; i < 8; i++, j++);
+		printf("%d + %d = %d\n", i, j, i+j);
+	//the 2. loop doesn't do anything
 	
 	//3. feladat
 	//Rewrite the program in Listing 7.4. This time,
