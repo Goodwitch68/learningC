@@ -44,8 +44,8 @@ main() {
 	printf("5. feladat. \n");
 	char ch = '0';
 	printf("Please type in one character:\n");
-	for (int i = 0; ch != 'q' ? 1 : 0;) {
-		ch = getc( stdin );
+	for (int i=0; ch!='q' ? 1 : 0;) {
+		ch = getc(stdin);
 	}
 	return 0;
 }

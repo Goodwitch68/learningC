@@ -4,12 +4,11 @@
 main() {
 	setbuf(stdout, NULL);
 	printf("1. feladat. \n");
-
 	int i;
 	printf("Integers that can be divided by both 2 and 3\n");
 	printf("(within the range of 0 to 100):\n");
-	for (i=0; i<=100; i++){
-		if (i%6 == 0){
+	for (i=0; i<=100; i++) {
+		if (i % 6 == 0) {
 		printf(" %d\n", i);
 		}
 	}
@@ -17,11 +16,11 @@ main() {
 //2. Rewrite the program in Listing 10.1 by using nested if statements.
 
 	printf("2. feladat. \n");
-	//int i;
+	//int i; ha önálló progi lenne, kellene
 	printf("Integers that can be divided by both 2 and 3\n");
 	printf("(within the range of 0 to 100):\n");
-	for (i=0; i<=100; i++){
-		if (i%2 == 0) {
+	for (i=0; i<=100; i++) {
+		if (i % 2 == 0) {
 			if (i % 3 == 0) {
 				printf(" %d\n", i);
 			}
@@ -34,7 +33,7 @@ main() {
 	printf("3. feladat. \n");
 	char ch = '0';
 	printf("Please type in one character:\n");
-	ch = getc( stdin );
+	ch = getc(stdin);
 	switch (ch) {
 		case 'A': 
 		printf("A kódja: %d\n", ch);
@@ -55,9 +54,8 @@ main() {
 //5. Rewrite the program in Listing 10.7. This time, instead of skipping 3 and 5, 
 //skip the integer that can be evenly divided by both 2 and 3.
 	printf("5. feladat. \n");
-	
 	int sum = 0;
-	for (i=1; i<8; i++){
+	for (i=1; i<8; i++) {
 		if ((i % 2 ==0) || (i % 3 ==0))
 			continue;
 		sum += i;

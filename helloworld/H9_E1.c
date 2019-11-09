@@ -23,7 +23,7 @@ main() {
 	printf("2. feladat. \n");
 	printf("The size of short int is: %d.\n", sizeof(short int));
 	printf("The size of long int is: %d.\n", sizeof(long int));
-	printf("The size of long double is: %d.\n", 	sizeof(long double));
+	printf("The size of long double is: %d.\n", sizeof(long double));
 
 //3. Write a program to multiply two signed int variables with positive values, and
 //display the result as a long int.
@@ -37,7 +37,6 @@ main() {
 //4. Write a program to display negative integers in hex format along with their signed int equivalents.
 
 	printf("4. feladat. \n");
-	
 	int neg_num = -1;
 	printf("Please type in one negative number:\n");
 	scanf ("%d", &neg_num);
@@ -46,7 +45,6 @@ main() {
 //5. Given an angle of 30 degrees, write a program to calculate its sine and tangentvalues.
 
 	printf("5. feladat. \n");
-	
 	double angle = 30;
 	angle *= 3.141593 / 180.0;
 	printf("The sine of angle 30degree is %f, the tangent of it is: %f\n", sin(angle), tan(angle));
@@ -55,6 +53,5 @@ main() {
 	printf("6. feladat. \n");
 	int hex = 0x19A1;
 	printf("The square root of 0x19A1 is: %f\n",sqrt(hex));
-	
 	return 0;
 }
