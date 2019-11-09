@@ -32,7 +32,7 @@ double AddDouble(int x, ...) {
 	for (i=0; i<x; i++) result += va_arg(arglist, double);
 	va_end (arglist);
 return result;
-}
+//na ezzel ugyanaz a problémám, mint az előző feladattal. :-(
+	}
 	
-	//na ezzel ugyanaz a problémám, mint az előző feladattal. :-(
 	
