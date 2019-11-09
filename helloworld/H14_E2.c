@@ -9,7 +9,7 @@ double y = 1.234567; /* program scope */
 	
 void function_1(int x, double y) {
 printf("From function_1:\n x=%d, y=%f\n", x, y);
-	}
+}
 
 main() {
 	int x = 4321; /* block scope 1*/

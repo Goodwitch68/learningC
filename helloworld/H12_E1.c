@@ -6,8 +6,8 @@ write a program to display each element of the array on the screen.*/
 main() {
 	char array_ch[5] = {'A', 'B', 'C', 'D', 'E'};
 	int i;
-	for (i = 0; i < 5; i++){
-		printf("%c",array_ch[i]);
+	for (i=0; i<5; i++){
+		printf("%c", array_ch[i]);
 	}
 	printf("\n");
 
@@ -15,7 +15,7 @@ main() {
 character array with 'a', 'b', 'c', 'd', and 'e', and then print out the value of
 each element in the array.*/
 	
-	for (i = 0; i < 5; i++){
+	for (i=0; i<5; i++){
 	array_ch[i] = i + 97;
 	printf("%c",array_ch[i]);
 	}
@@ -39,10 +39,10 @@ elements of the array.*/
 		'4', 'd',
 		'5', 'e',
 		'6', 'f'};
-	int total_byte = sizeof (list_ch);
-	int number_of_elements = total_byte / sizeof (char);
+	int total_byte = sizeof(list_ch);
+	int number_of_elements = total_byte / sizeof(char);
 	int imax = number_of_elements / 2;
-	for (i=0; i < imax; i++){
+	for (i=0; i<imax; i++){
 		printf("\n");
 		for ( int j=0; j<2; j++){
 		printf("%c", list_ch[i][j]);
@@ -75,9 +75,9 @@ space taken by the array, and then display the results on the screen.*/
 		3.12345,
 		4.12345,
 		5.12345};
-	total_byte = sizeof (list_data);
+	total_byte = sizeof(list_data);
 	printf("The total memory space taken by the array by method I.: %d\n", total_byte);
-	total_byte = sizeof (double) * 6;
+	total_byte = sizeof(double) * 6;
 	printf("The total memory space taken by the array by method II.: %d\n", total_byte);
 	return 0;
 }

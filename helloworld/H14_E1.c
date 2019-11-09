@@ -30,4 +30,4 @@ register int i;
 
 // e)
 
-char * ptr_ch = 0;
+char *ptr_ch = 0;

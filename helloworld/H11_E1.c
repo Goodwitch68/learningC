@@ -17,8 +17,8 @@ main() {
 //to 543.21 by using a double pointer.
 
 	double flt_num = 123.45;
-	double * ptr_flt_num = & flt_num;
-	* ptr_flt_num = 543.21;
+	double *ptr_flt_num = &flt_num;
+	*ptr_flt_num = 543.21;
 	printf("flt_num =%f\n", flt_num);
 
 

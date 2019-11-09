@@ -3,15 +3,13 @@
 
 #include <stdio.h>
 /* the add_two function */
-int add_two(int x, int y)
-{
-static int counter = 1;
-static int prev_sum =0;
-
-printf("This is the function call of %d,\n", counter++);
-printf("The previous result was %d,\n", prev_sum);
-prev_sum = x + y;
-return (x + y);
+int add_two(int x, int y) {
+	static int counter = 1;
+	static int prev_sum = 0;
+	printf("This is the function call of %d,\n", counter++);
+	printf("The previous result was %d,\n", prev_sum);
+	prev_sum = x + y;
+	return (x + y);
 }
 /* the main function */
 main() {

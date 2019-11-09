@@ -18,7 +18,7 @@ main() {
 	char array_ch_new[10] = {'I',' ','l','i','k','e',' ','C','!','\0'};
 	int i;
 	int length = 0;
-	for (i=0; array_ch_new[i]; i++){
+	for (i=0; array_ch_new[i]; i++) {
 		length ++;
 	}
 	printf("The lenght of string is %d\n", length);
@@ -32,15 +32,15 @@ main() {
 	char str[80];
 	int delt = 'a' - 'A';
 	printf("Enter a string less than 80 characters:\n");
-	gets( str );
+	gets(str);
 	i = 0;
-	while (str[i]){
+	while (str[i]) {
 	if ((str[i] >= 'A') && (str[i] <= 'Z'))
 		str[i] += delt; /* convert to lower case */
 		++i;
 	}
 	printf("The entered string is (in lowercase):\n");
-	puts( str );
+	puts(str);
 
 
 //4. Write a program that uses the scanf() function to read in two integers entered by
