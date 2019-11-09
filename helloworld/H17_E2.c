@@ -9,8 +9,8 @@
 main() {
 	float *ptr_x;
 	int result;
-	ptr_x = calloc (100, sizeof(float));
-	if (ptr_x != NULL){
+	ptr_x = calloc(100, sizeof(float));
+	if (ptr_x != NULL) {
 		result = 0;
 		printf("First allocation is done\n");
 	}
@@ -19,7 +19,7 @@ main() {
 		result = 1;
 	}
 	ptr_x = realloc (ptr_x, 150);
-	if (ptr_x != NULL){
+	if (ptr_x != NULL) {
 		result = 0;
 		printf("The reallocation is done\n");
 	}

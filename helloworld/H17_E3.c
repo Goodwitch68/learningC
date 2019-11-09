@@ -24,7 +24,7 @@ main() {
 		result = 1;
 	}
 	ptr_x2 = calloc (Nodata, sizeof(float));
-	if (ptr_x2 != NULL){
+	if (ptr_x2 != NULL) {
 		result = 0;
 		printf("Second allocation is done\n, the first value of the block is: %f\n", *ptr_x2);
 	}

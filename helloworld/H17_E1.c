@@ -16,13 +16,13 @@ main() {
 	scanf("%d", &SizeofAllmemory);
 	ptr_x = malloc (SizeofAllmemory/2 * sizeof(int));
 	//ptr_x = malloc (SizeofAllmemory); Ez vajon miért nem jó helyette? segmentation faultot ad vissza
-	if (ptr_x != NULL){
-		for (int i = 0; i < SizeofAllmemory/2; i++){
+	if (ptr_x != NULL) {
+		for (int i = 0; i < SizeofAllmemory/2; i++) {
 			ptr_x[i] = i + 1;
 			printf("%d\n", *(ptr_x + i));
 		}
 		printf("Az összeg az elején: %d\n", sum);
-		for (int i = 0; i < SizeofAllmemory/2; i++){
+		for (int i = 0; i < SizeofAllmemory/2; i++) {
 			sum += ptr_x[i];
 			printf("Az összeg most: %d\n", sum);
 		}

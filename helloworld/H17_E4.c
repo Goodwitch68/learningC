@@ -16,38 +16,34 @@ main() {
 	};
 	char *ptr;
 	int i;
-	
 	int termination = 0;
-	
 	ptr = realloc(NULL, (strlen(str[0]) + 1) * sizeof(char)); //ptr = malloc((strlen(str[0]) + 1) * sizeof(char));
-	if (ptr == NULL){
-	printf("malloc() failed.\n");
-	termination = 1;
+	if (ptr == NULL) {
+		printf("malloc() failed.\n");
+		termination = 1;
 	}
-	else{
-	StrCopy(str[0], ptr);
-	printf("%s\n", ptr);
-	for (i=1; i<4; i++){
-	ptr = realloc(ptr, (strlen(str[i]) + 1) * sizeof(char));
-	if (ptr == NULL){
-	printf("realloc() failed.\n");
-	termination = 1;
-	i = 4; /* break the fro loop */
-	}
-	else{
-	StrCopy(str[i], ptr);
-	printf("%s\n", ptr);
-	}
-	}
+	else {
+		StrCopy(str[0], ptr);
+		printf("%s\n", ptr);
+		for (i=1; i<4; i++) {
+			ptr = realloc(ptr, (strlen(str[i]) + 1) * sizeof(char));
+			if (ptr == NULL) {
+				printf("realloc() failed.\n");
+				termination = 1;
+				i = 4; /* break the for loop */
+			}
+			else {
+				StrCopy(str[i], ptr);
+				printf("%s\n", ptr);
+			}
+		}
 	}
 	realloc(ptr, 0); //free(ptr)
 	return termination;
-	}
+}
 	/* funciton definition */
-	void StrCopy(char *str1, char *str2)
-	{
+	void StrCopy(char *str1, char *str2) {
 	int i;
-	
 	for (i=0; str1[i]; i++)
 	str2[i] = str1[i];
 	str2[i] = '\0';

@@ -8,7 +8,7 @@
 void Strprint(char * ch [][15]);
 
 main() {
-	char str[2][15] = { "You know what,", "C is powerful." };
+	char str[2][15] = {"You know what,", "C is powerful."};
 	char *ptr_str;
 	ptr_str = str;
 	Strprint(ptr_str);
@@ -20,6 +20,6 @@ main() {
 
 void Strprint(char *ch [][15]) {
 	printf("%s\n", ch);
+//fordításkor nyom egy csomó warningot, amit nem tudok értelmezni, viszont működik.
 }
 
-//fordításkor nyom egy csomó warningot, amit nem tudok értelmezni, viszont működik.
