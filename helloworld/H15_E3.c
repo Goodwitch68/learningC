@@ -32,7 +32,7 @@ double AddDouble(int x, ...) {
 	for (i=0; i<x; i++) result += va_arg(arglist, double);
 	va_end (arglist);
 return result;
-//elakadtam, mert nem értem a változó argumentumu függvényeket :-(
+
 }
 
 
